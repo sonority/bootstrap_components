@@ -1,0 +1,88 @@
+<html
+	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	xmlns:bc="http://typo3.org/ns/Sonority/BootstrapComponents/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+
+	<f:format.raw>
+		<f:switch expression="{data.flexform_rowclass}">
+			<f:case value="1">
+				<ul id="timeline-{data.uid}"{bc:attribute(values:{0:'timeline timeline-v1',1:gridClasses})}>
+					<f:if condition="{data.tx_gridelements_view_children}">
+						<f:then>
+							<f:for each="{data.tx_gridelements_view_children}" as="child">
+								<li>
+								<f:if condition="{child.date}">
+									<div class="timeline-time">
+										<span>
+											<f:format.date format="j.n.Y">{child.date}</f:format.date>
+										</span>
+										<span>
+											<f:format.date format="%B">{child.date}</f:format.date>
+										</span>
+									</div>
+								</f:if>
+								<i class="timeline-icon rounded-x hidden-xs"></i>
+								<div class="timeline-body">
+									<bc:variableObject data="{data}" keys="{0:'tx_gridelements_view_child_',1:child.uid}" />
+								</div>
+								</li>
+							</f:for>
+						</f:then>
+						<f:else>
+							<span class="">no content elements found</span>
+						</f:else>
+					</f:if>
+				</ul>
+			</f:case>
+			<f:case value="2">
+				<ul id="timeline-{data.uid}"{bc:attribute(values:{0:'timeline timeline-v2',1:gridClasses})}>
+					<f:if condition="{data.tx_gridelements_view_children}">
+						<f:then>
+							<f:for each="{data.tx_gridelements_view_children}" as="child" iteration="iterator">
+								<li class="{f:if(condition:'{iterator.isEven}', then:'timeline-inverted')}">
+									<div class="timeline-badge primary"><i class="glyphicon glyphicon-record{f:if(condition:'{iterator.isEven}', then:' invert')}"></i></div>
+									<div class="timeline-panel">
+										<div class="timeline-body" style="">
+											<bc:variableObject data="{data}" keys="{0:'tx_gridelements_view_child_',1:child.uid}" />
+										</div>
+										<f:if condition="{child.date}">
+											<div class="timeline-footer">
+												<i class="fa fa-clock-o"></i>
+												<span>
+													<f:format.date format="j.n.Y">{child.date}</f:format.date>
+												</span>
+											</div>
+										</f:if>
+									</div>
+								</li>
+							</f:for>
+						</f:then>
+						<f:else>
+							<span class="">no content elements found</span>
+						</f:else>
+					</f:if>
+					<li class="clearfix" style="float: none;"></li>
+				</ul>
+			</f:case>
+			<f:case value="3">
+				<ul id="timeline-{data.uid}"{bc:attribute(values:{0:'timeline timeline-v3',1:gridClasses})}>
+					<f:if condition="{data.tx_gridelements_view_children}">
+						<f:then>
+							<f:for each="{data.tx_gridelements_view_children}" as="child" iteration="iterator">
+								<li>
+									<div class="timeline-time hidden-xs">{iterator.cycle}</div>
+									<div class="timeline-body">
+										<bc:variableObject data="{data}" keys="{0:'tx_gridelements_view_child_',1:child.uid}" />
+									</div>
+								</li>
+							</f:for>
+						</f:then>
+						<f:else>
+							<span class="">no content elements found</span>
+						</f:else>
+					</f:if>
+				</ul>
+			</f:case>
+		</f:switch>
+	</f:format.raw>
+</html>

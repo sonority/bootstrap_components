@@ -1,0 +1,313 @@
+#-------------------------------------------------------------------------------
+# RTE
+#-------------------------------------------------------------------------------
+
+## RTE Classes
+RTE.classes {
+
+	# Links
+	external-link {
+		name = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang_browselinkscontroller.xlf:extUrl
+		value =
+	}
+	internal-link {
+		name = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang_browselinkscontroller.xlf:page
+		value =
+	}
+	download {
+		name = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang_browselinkscontroller.xlf:file
+		value =
+	}
+	mail {
+		name = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang_browselinkscontroller.xlf:email
+		value =
+	}
+
+	# Alignments
+	text-left {
+		name = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang_tooltips.xlf:justifyleft
+		value = text-align: left;
+	}
+	text-center {
+		name = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang_tooltips.xlf:justifycenter
+		value = text-align: center; margin: 0 auto;
+	}
+	text-right {
+		name = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang_tooltips.xlf:justifyright
+		value = text-align: right;
+	}
+	text-justify {
+		name = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang_tooltips.xlf:justifyfull
+		value = text-align: justify;
+	}
+
+	# Text-transformation
+	text-lowercase {
+		name = Text lowercase
+		value = text-transform: lowercase;
+	}
+	text-uppercase {
+		name = Text uppercase
+		value = text-transform: uppercase;
+	}
+	text-capitalize {
+		name = Text capitalize
+		value = text-transform: capitalize;
+	}
+
+	# Text-colors
+	text-muted {
+		name = Text muted
+		value = color: #777;
+	}
+	text-primary {
+		name = Text primary
+		value = color: #337ab7;
+	}
+	text-success {
+		name = Text success
+		value = color: #3c763d;
+	}
+	text-info {
+		name = Text info
+		value = color: #31708f;
+	}
+	text-warning {
+		name = Text warning
+		value = color: #8a6d3b;
+	}
+	text-danger {
+		name = Text danger
+		value = color: #a94442;
+	}
+
+	# Text-elements
+	lead {
+		name = Lead
+		value = font-size: 21px; font-weight: 300; line-height: 1.4;
+	}
+
+	# Buttons
+	btn {
+		name = Button (Base element)
+		value =
+	}
+	btn-primary {
+		name = Button Primary
+		value =
+	}
+	btn-success {
+		name = Button Success
+		value =
+	}
+	btn-info {
+		name = Button Info
+		value =
+	}
+	btn-warning {
+		name = Button Warning
+		value =
+	}
+	btn-danger {
+		name = Button Danger
+		value =
+	}
+	btn-link {
+		name = Button Link
+		value =
+	}
+}
+
+## Anchor classes configuration for use by the anchor accesibility feature
+RTE.classesAnchor {
+	external-link {
+		class = external-link
+		type = url
+	}
+	internal-link {
+		class = internal-link
+		type = page
+	}
+	download {
+		class = download
+		type = file
+	}
+	mail {
+		class = mail
+		type = mail
+	}
+}
+
+## Default RTE configuration
+RTE.default {
+
+	## RTE Stylesheet für benutzerdefinierte Formatauszeichnungen
+	contentCSS {
+		bootstrap_components = typo3conf/ext/bootstrap_components/Resources/Public/Css/rte.css
+	}
+
+	## Markup options
+	enableWordClean = 1
+	removeTrailingBR = 1
+	removeComments = 1
+	removeTags = center, font, o:p, sdfield
+	removeTagsAndContents = link, meta, script, style, title
+	transformBoldAndItalicTags = 1
+
+	## Toolbar options
+	## The TCA configuration may add buttons to the toolbar
+	showButtons = blockstylelabel, blockstyle, textstylelabel, textstyle
+	showButtons := addToList(strong, bold, emphasis, italic, strikethrough, subscript, superscript, underline)
+	showButtons := addToList(formatblock, insertparagraphbefore, insertparagraphafter, blockquote, line, left, center, right, justifyfull)
+	showButtons := addToList(orderedlist, unorderedlist, definitionlist, definitionitem, outdent, indent, textcolor, bgcolor, textindicator, editelement)
+	showButtons := addToList(insertcharacter, abbreviation, user, link, unlink, table, toggleborders, findreplace, chMode, inserttag, removeformat, pastetoggle, undo, redo, about)
+	showButtons := addToList(tableproperties, tablerestyle, rowproperties, rowinsertabove, rowinsertunder, rowdelete, rowsplit, columnproperties, columninsertbefore, columninsertafter, columndelete, columnsplit, cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, cellmerge)
+
+	## Buttons that should be shown in the context menu
+	contextMenu.showButtons = strong, bold, emphasis, italic, strikethrough, subscript, superscript, underline
+	contextMenu.showButtons := addToList(user, link, unlink, table, toggleborders, findreplace, chMode)
+	contextMenu.showButtons := addToList(tableproperties, tablerestyle, rowproperties, rowinsertabove, rowinsertunder, rowdelete, rowsplit, columnproperties, columninsertbefore, columninsertafter, columndelete, columnsplit, cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, cellmerge)
+
+	## More toolbar options
+	keepButtonGroupTogether = 1
+
+	## Enable status bar
+	showStatusBar =  1
+
+	## Hide infrequently used block types in the block formatting selector
+	buttons.formatblock.removeItems := removeFromList(pre,address)
+
+	## List all class selectors that are allowed on the way to the database
+	proc.allowedClasses := addToList(text-left, text-center, text-right, text-justify)
+	proc.allowedClasses := addToList(text-lowercase, text-uppercase, text-capitalize)
+	proc.allowedClasses := addToList(text-muted, text-primary, text-success, text-info, text-warning, text-danger)
+	proc.allowedClasses := addToList(lead)
+	#proc.allowedClasses := addToList(glyphicon, glyphicon-*)
+
+	proc {
+		# Content to database
+		entryHTMLparser_db = 1
+		entryHTMLparser_db {
+			tags {
+				## Remap bold and italic to strong and emphasis
+				#b.remap = strong
+				#i.remap = em
+
+				# Add class 'table' to all tables (if not defined already)
+				table.fixAttrib.class {
+					default = table
+					list >
+					userFunc = Sonority\BootstrapComponents\Helpers\RteClasses->tableClass
+					userFunc.default < lib.parseFunc_RTE.externalBlocks.table.stdWrap.HTMLparser.tags.table.fixAttrib.class.default
+				}
+				# Add class 'btn' to all links which contains 'btn-*' (if not defined already)
+				a.fixAttrib.class {
+					userFunc = Sonority\BootstrapComponents\Helpers\RteClasses->buttonClass
+					userFunc.default = btn
+				}
+				span {
+					#fixAttrib.class.unset >
+					#fixAttrib >
+					#fixAttrib.class.list = glyphicon, glyphicon-phone
+					#allowedAttribs < RTE.default.proc.entryHTMLparser_db.tags.div.allowedAttribs
+					#rmTagIfNoAttrib >
+				}
+			}
+		}
+	}
+
+	buttons {
+
+		## Use bootstrap alignment-classes
+		left.useClass = text-left
+		center.useClass = text-center
+		right.useClass = text-right
+		justifyfull.useClass = text-justify
+
+		## Add hotkeys associated with bold, italic, strikethrough and underline buttons
+		bold.hotKey = b
+		italic.hotKey = i
+		strikethrough.hotKey = s
+		underline.hotkey = u
+
+		blockstyle {
+			tags {
+				## Restrict the list of class selectors presented by the RTE to the following for the specified tags:
+				div.allowedClasses = align-left, align-center, align-right
+				table.allowedClasses = table-bordered, table-hover, table-striped, table-condensed
+				td.allowedClasses = active, success, info, warning, danger, align-left, align-center, align-right, text-muted
+				tr.allowedClasses < RTE.default.buttons.blockstyle.tags.td.allowedClasses
+				th.allowedClasses < RTE.default.buttons.blockstyle.tags.td.allowedClasses
+			}
+		}
+		textstyle {
+			tags {
+				## Restrict the list of class selectors presented by the RTE to the following for the specified tags:
+				all.allowedClasses := addToList(active, success, info, warning, danger)
+				all.allowedClasses := addToList(align-left, align-center, align-right)
+				all.allowedClasses := addToList(text-muted, text-primary, text-success, text-info, text-warning, text-danger)
+				#span.allowedClasses < RTE.default.buttons.textstyle.tags.all.allowedClasses
+			}
+		}
+		link {
+			## These classes should also be in the list proc.allowedClasses
+			properties.class.allowedClasses = external-link, internal-link, download, mail, btn-primary, btn-success, btn-info, btn-warning, btn-danger, btn-link
+			page.properties.class.default = internal-link
+			url.properties.class.default = external-link
+			file.properties.class.default = download
+			mail.properties.class.default = mail
+		}
+		table {
+			## Prevent the insertion of paragraphs in table cells when the enter key is pressed
+			disableEnterParagraphs = 1
+		}
+
+		## Configuration specific to the table button or TableOperations feature
+		## Use the context menu instead of the toolbar for table operations, but keep toggleborders button in toolbar
+		toggleborders.keepInToolbar = 1
+		## Show borders on table creation
+		toggleborders.setOnTableCreation = 1
+		toggleborders.setOnRTEOpen = 1
+
+		## The button is toggled to ON when the RTE opens
+		pastetoggle.setActiveOnRteOpen = 1
+
+		## Configuration specific to the inserttag button or QuickTag feature
+		## Do not allow insertion of the following tags
+		inserttag.denyTags = font
+	}
+
+	## Table operations buttons should be hidden in the tool bar
+	hideTableOperationsInToolbar = 1
+
+	## Configuration specific to the TableOperations feature
+	## Remove the following fieldsets from the table operations dialogs
+	#disableAlignmentFieldsetInTableOperations = 1
+	disableSpacingFieldsetInTableOperations = 1
+	disableColorFieldsetInTableOperations = 1
+	disableLayoutFieldsetInTableOperations = 1
+	disableBordersFieldsetInTableOperations = 1
+
+	userElements {
+		10 = Bootstrap Components
+		10 {
+			10 = Button
+			10.description = Insert a button
+			10.content = <a href="1" class="btn btn-primary" title="">Button</a>
+
+			20 = Icon
+			20.description = Insert an Icon
+			20.mode = wrap
+			20.content = <em class="glyphicon glyphicon-star"></em> |
+		}
+	}
+}
+
+## Use same processing as on entry to database to clean content pasted into the editor
+RTE.default.enableWordClean.HTMLparser < RTE.default.proc.entryHTMLparser_db
+
+## Frontend RTE configuration
+RTE.default.FE < RTE.default
+RTE.default.FE.showStatusBar = 0
+RTE.default.FE.FE >
+RTE.default.FE.userElements >

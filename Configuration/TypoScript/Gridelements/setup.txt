@@ -1,0 +1,111 @@
+tt_content.shortcut {
+	variables {
+		5 = LOAD_REGISTER
+		5 {
+			tt_content_shortcut_recursive.field = recursive
+		}
+		shortcuts {
+			tables := addToList(pages)
+			conf.pages = COA
+			conf.pages {
+				10 = USER
+				10 {
+					userFunc = GridElementsTeam\Gridelements\Plugin\Gridelements->user_getTreeList
+				}
+				20 = CONTENT
+				20 {
+					table = tt_content
+					select {
+						pidInList.data = register:pidInList
+						where = colPos >= 0
+						languageField = sys_language_uid
+						orderBy = colPos,sorting
+						orderBy.dataWrap = FIND_IN_SET(pid,'{register:pidInList}'),|
+					}
+				}
+			}
+		}
+		30 = RESTORE_REGISTER
+	}
+}
+
+plugin.tx_gridelements_pi1 >
+lib.gridelements_pi1 >
+lib.gridelements_pi1 = USER
+lib.gridelements_pi1 {
+	userFunc = GridElementsTeam\Gridelements\Plugin\Gridelements->main
+	setup {
+		# stdWrap functions being applied to each element
+		default {
+			columns {
+				default {
+					renderObj = COA
+					renderObj {
+						# You can use registers to i.e. provide different image settings for each column
+						# 10 = LOAD_REGISTER
+						20 =< tt_content
+						# And you can reset the register later on
+						# 30 = RESTORE_REGISTER
+					}
+				}
+			}
+			# Use fluid-templates for gridelements
+			cObject = FLUIDTEMPLATE
+			cObject {
+				templateName = Default
+				templateRootPaths {
+					0 = EXT:bootstrap_components/Resources/Private/Gridelements/Templates
+				}
+				partialRootPaths {
+					0 = EXT:bootstrap_components/Resources/Private/Gridelements/Partials
+				}
+				layoutRootPaths {
+					0 = EXT:bootstrap_components/Resources/Private/Gridelements/Layouts
+				}
+				dataProcessing {
+					10 = Sonority\BootstrapComponents\DataProcessing\Content\GridelementsProcessor
+					11 = Sonority\BootstrapComponents\DataProcessing\FilesProcessor
+					11 {
+						references.fieldName = template_media
+					}
+				}
+			}
+		}
+
+		col2 < .default
+		col2.cObject.templateName = Columns
+
+		col3 < .default
+		col3.cObject.templateName = Columns
+
+		col4 < .default
+		col4.cObject.templateName = Columns
+
+		row < .default
+		row.cObject.templateName = Row
+
+		container < .default
+		container.cObject.templateName = Container
+
+		accordion < .default
+		accordion.cObject.templateName = Accordion
+
+		tabs < .default
+		tabs.cObject.templateName = Tabs
+
+		carousel < .default
+		carousel.cObject.templateName = Carousel
+
+		timeline < .default
+		timeline.cObject.templateName = Timeline
+	}
+}
+
+tt_content {
+	gridelements_pi1 >
+	gridelements_pi1 =< lib.fluidContent
+	gridelements_pi1 {
+		templateName = Gridelements
+	}
+	gridelements_view < .gridelements_pi1
+}

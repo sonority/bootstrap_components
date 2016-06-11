@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-12-14T13:07:39Z" product-name="bootstrap_components">
+		<header/>
+		<body>
+
+			<trans-unit id="shared.notset" xml:space="preserve" approved="yes">
+                <source>Not set</source>
+                <target>nicht gesetzt</target>
+            </trans-unit>
+			<trans-unit id="shared.nostyle" xml:space="preserve" approved="yes">
+                <source>No style</source>
+                <target>kein Stil</target>
+            </trans-unit>
+			<trans-unit id="tt_content.header_style" xml:space="preserve" approved="yes">
+				<source>Style</source>
+				<target>Stil</target>
+			</trans-unit>
+			<trans-unit id="tt_content.header_icon" xml:space="preserve" approved="yes">
+				<source>Icon</source>
+				<target>Icon</target>
+			</trans-unit>
+			<trans-unit id="tt_content.layout_style" xml:space="preserve" approved="yes">
+                <source>Layout Style</source>
+                <target>Layout Stil</target>
+            </trans-unit>
+			<trans-unit id="tt_content.visibility" xml:space="preserve" approved="yes">
+				<source>Show/hide based on screen size</source>
+				<target>Anzeigen/verbergen (responsiv)</target>
+			</trans-unit>
+			<trans-unit id="tt_content.image_shape" xml:space="preserve" approved="yes">
+				<source>Shape</source>
+				<target>Form</target>
+			</trans-unit>
+			<trans-unit id="tt_content.image_responsive" xml:space="preserve" approved="yes">
+				<source>Responsive Image</source>
+				<target>Dynamische Anpassung</target>
+			</trans-unit>
+			<trans-unit id="tt_content.gallery_width" xml:space="preserve" approved="yes">
+                <source>Gallery width</source>
+				<target>Breite der Galerie</target>
+            </trans-unit>
+			<trans-unit id="tt_content.gallery_break" xml:space="preserve" approved="yes">
+                <source>Relation to text</source>
+                <target>Verhältnis zum Text</target>
+            </trans-unit>
+			<trans-unit id="tt_content.gallery_carousel" xml:space="preserve" approved="yes">
+                <source>Gallery carousel</source>
+                <target>Galerie Karussell</target>
+            </trans-unit>
+			<trans-unit id="tt_content.wrap" xml:space="preserve" approved="yes">
+                <source>Page Containment</source>
+				<target>Seiten-Behälter</target>
+            </trans-unit>
+			<trans-unit id="tt_content.container" xml:space="preserve" approved="yes">
+                <source>Enable container</source>
+				<target>Aktiviere Container</target>
+            </trans-unit>
+			<trans-unit id="tt_content.section_frame" xml:space="preserve" approved="yes">
+                <source>Section Frame</source>
+                <target>Rahmen</target>
+            </trans-unit>
+			<trans-unit id="tt_content.section_frame_style" xml:space="preserve" approved="yes">
+                <source>Section Frame Style</source>
+                <target>Rahmen Stil</target>
+            </trans-unit>
+			<trans-unit id="tt_content.template_media" xml:space="preserve" approved="yes">
+                <source>Template Media</source>
+                <target>Template Medien</target>
+            </trans-unit>
+
+			<trans-unit id="tt_content.header_style.1" xml:space="preserve" approved="yes">
+                <source>Style 1</source>
+				<target>Stil 1</target>
+            </trans-unit>
+			<trans-unit id="tt_content.header_style.2" xml:space="preserve" approved="yes">
+                <source>Style 2</source>
+				<target>Stil 2</target>
+            </trans-unit>
+			<trans-unit id="tt_content.header_style.3" xml:space="preserve" approved="yes">
+                <source>Style 3</source>
+				<target>Stil 3</target>
+            </trans-unit>
+			<trans-unit id="tt_content.header_style.4" xml:space="preserve" approved="yes">
+                <source>Style 4</source>
+				<target>Stil 4</target>
+            </trans-unit>
+			<trans-unit id="tt_content.header_style.5" xml:space="preserve" approved="yes">
+                <source>Style 5</source>
+				<target>Stil 5</target>
+            </trans-unit>
+			<trans-unit id="tt_content.header_style.6" xml:space="preserve" approved="yes">
+                <source>Style 6</source>
+				<target>Stil 6</target>
+            </trans-unit>
+
+			<trans-unit id="tt_content.visibility.visible.xs" xml:space="preserve" approved="yes">
+				<source>Show on mobile (&lt;768px)</source>
+				<target>Anzeigen auf Mobilgeräten (&lt;768px)</target>
+			</trans-unit>
+			<trans-unit id="tt_content.visibility.visible.sm-xs" xml:space="preserve" approved="yes">
+				<source>Show on mobile and tablet (&lt;992px)</source>
+				<target>Anzeigen auf Handy und Tablet (&lt;992px)</target>
+			</trans-unit>
+			<trans-unit id="tt_content.visibility.visible.md-lg" xml:space="preserve" approved="yes">
+				<source>Show on desktop and bigger (&amp;ge;992px)</source>
+				<target>Anzeigen auf Desktop und grösser (&amp;ge;992px)</target>
+			</trans-unit>
+			<trans-unit id="tt_content.visibility.visible.lg" xml:space="preserve" approved="yes">
+				<source>Show on large screens (&amp;ge;1200px)</source>
+				<target>Anzeigen auf grossen Screens (&amp;ge;1200px)</target>
+			</trans-unit>
+			<trans-unit id="tt_content.visibility.hidden.xs" xml:space="preserve" approved="yes">
+				<source>Hide on mobile (&lt;768px)</source>
+				<target>Verbergen auf Mobilgeräten (&lt;768px)</target>
+			</trans-unit>
+			<trans-unit id="tt_content.visibility.hidden.sm-xs" xml:space="preserve" approved="yes">
+				<source>Hide on mobile and tablet (&lt;992px)</source>
+				<target>Verbergen auf Handy und Tablet (&lt;992px)</target>
+			</trans-unit>
+			<trans-unit id="tt_content.visibility.hidden.md-lg" xml:space="preserve" approved="yes">
+				<source>Hide on desktop and bigger (&amp;ge;992px)</source>
+				<target>Verbergen auf Desktop und grösser (&amp;ge;992px)</target>
+			</trans-unit>
+			<trans-unit id="tt_content.visibility.hidden.lg" xml:space="preserve" approved="yes">
+				<source>Hide on large screens (&amp;ge;1200px)</source>
+				<target>Verbergen auf grossen Screens (&amp;ge;1200px)</target>
+			</trans-unit>
+
+			<trans-unit id="tt_content.image_shape.I.1" xml:space="preserve" approved="yes">
+				<source>Rounded</source>
+				<target>Abgerundet</target>
+			</trans-unit>
+			<trans-unit id="tt_content.image_shape.I.2" xml:space="preserve" approved="yes">
+				<source>Circle</source>
+				<target>Kreis</target>
+			</trans-unit>
+			<trans-unit id="tt_content.image_shape.I.3" xml:space="preserve" approved="yes">
+				<source>Thumbnail</source>
+				<target>Vorschaubild</target>
+			</trans-unit>
+
+			<trans-unit id="tt_content.gallery_break.I.1" xml:space="preserve" approved="yes">
+                <source>Priority to smartphone</source>
+                <target>Priorität auf Smartphone</target>
+            </trans-unit>
+			<trans-unit id="tt_content.gallery_break.I.2" xml:space="preserve" approved="yes">
+                <source>Keep allocation</source>
+                <target>Aufteilung beibehalten</target>
+            </trans-unit>
+			<trans-unit id="tt_content.gallery_break.I.3" xml:space="preserve" approved="yes">
+                <source>Balanced allocation</source>
+                <target>Ausgewogene Aufteilung</target>
+            </trans-unit>
+			<trans-unit id="tt_content.gallery_break.I.4" xml:space="preserve" approved="yes">
+                <source>Focus on text width</source>
+                <target>Fokus auf Textbreite</target>
+            </trans-unit>
+			<trans-unit id="tt_content.gallery_break.I.5" xml:space="preserve" approved="yes">
+                <source>Focus on image width</source>
+                <target>Fokus auf Bildbreite</target>
+            </trans-unit>
+
+			<trans-unit id="tt_content.gallery_carousel.I.1" xml:space="preserve" approved="yes">
+                <source>Style 1</source>
+                <target>Stil 1</target>
+            </trans-unit>
+			<trans-unit id="tt_content.gallery_carousel.I.2" xml:space="preserve" approved="yes">
+                <source>Style 2</source>
+                <target>Stil 2</target>
+            </trans-unit>
+			<trans-unit id="tt_content.gallery_carousel.I.3" xml:space="preserve" approved="yes">
+                <source>Style 3</source>
+                <target>Stil 3</target>
+            </trans-unit>
+
+			<trans-unit id="tt_content.wrap.I.1" xml:space="preserve" approved="yes">
+				<source>Style 1</source>
+				<target>Stil 1</target>
+			</trans-unit>
+			<trans-unit id="tt_content.wrap.I.2" xml:space="preserve" approved="yes">
+				<source>Style 2</source>
+				<target>Stil 2</target>
+			</trans-unit>
+			<trans-unit id="tt_content.wrap.I.3" xml:space="preserve" approved="yes">
+				<source>Style 3</source>
+				<target>Stil 3</target>
+			</trans-unit>
+			<trans-unit id="tt_content.wrap.I.4" xml:space="preserve" approved="yes">
+				<source>Style 4</source>
+				<target>Stil 4</target>
+			</trans-unit>
+
+			<trans-unit id="tt_content.layout.I.1" xml:space="preserve" approved="yes">
+                <source>Jumbotron</source>
+                <target>Jumbotron</target>
+            </trans-unit>
+			<trans-unit id="tt_content.layout.I.2" xml:space="preserve" approved="yes">
+                <source>Thumbnail</source>
+                <target>Thumbnail</target>
+            </trans-unit>
+			<trans-unit id="tt_content.layout.I.3" xml:space="preserve" approved="yes">
+                <source>Alert</source>
+                <target>Alert</target>
+            </trans-unit>
+			<trans-unit id="tt_content.layout.I.4" xml:space="preserve" approved="yes">
+                <source>Panel</source>
+                <target>Panel</target>
+            </trans-unit>
+			<trans-unit id="tt_content.layout.I.5" xml:space="preserve" approved="yes">
+                <source>Well</source>
+                <target>Well</target>
+            </trans-unit>
+			<trans-unit id="tt_content.layout.I.6" xml:space="preserve" approved="yes">
+                <source>Blockquote</source>
+                <target>Blockquote</target>
+            </trans-unit>
+			<trans-unit id="tt_content.layout.I.7" xml:space="preserve" approved="yes">
+                <source>Box</source>
+                <target>Box</target>
+            </trans-unit>
+			<trans-unit id="tt_content.layout.I.8" xml:space="preserve" approved="yes">
+                <source>Modal</source>
+                <target>Modal</target>
+            </trans-unit>
+			<trans-unit id="tt_content.layout.I.9" xml:space="preserve" approved="yes">
+                <source>Citation</source>
+                <target>Zitat</target>
+            </trans-unit>
+
+			<trans-unit id="tt_content.section_frame.I.1" xml:space="preserve" approved="yes">
+                <source>Divider before content</source>
+				<target>Trennlinie vor dem Inhalt</target>
+            </trans-unit>
+			<trans-unit id="tt_content.section_frame.I.2" xml:space="preserve" approved="yes">
+                <source>Divider below content</source>
+				<target>Trennlinie nach dem Inhalt</target>
+            </trans-unit>
+			<trans-unit id="tt_content.section_frame.I.3" xml:space="preserve" approved="yes">
+                <source>Divider above/below content</source>
+				<target>Trennlinie vor/nach dem Inhalt</target>
+            </trans-unit>
+			<trans-unit id="tt_content.section_frame.I.4" xml:space="preserve" approved="yes">
+                <source>Margin before content</source>
+				<target>Abstand vor dem Inhalt</target>
+            </trans-unit>
+			<trans-unit id="tt_content.section_frame.I.5" xml:space="preserve" approved="yes">
+                <source>Margin below content</source>
+				<target>Abstand nach dem Inhalt</target>
+            </trans-unit>
+			<trans-unit id="tt_content.section_frame.I.6" xml:space="preserve" approved="yes">
+                <source>Margin above/below content</source>
+				<target>Abstand vor/nach dem Inhalt</target>
+            </trans-unit>
+
+			<trans-unit id="tt_content.section_frame_style.I.1.1" xml:space="preserve" approved="yes">
+                <source>Solid</source>
+				<target>Solide</target>
+            </trans-unit>
+			<trans-unit id="tt_content.section_frame_style.I.1.2" xml:space="preserve" approved="yes">
+                <source>Dotted</source>
+				<target>Gepunktet</target>
+            </trans-unit>
+			<trans-unit id="tt_content.section_frame_style.I.1.3" xml:space="preserve" approved="yes">
+                <source>Dashed</source>
+				<target>Gestrichelt</target>
+            </trans-unit>
+			<trans-unit id="tt_content.section_frame_style.I.2.1" xml:space="preserve" approved="yes">
+                <source>Small</source>
+				<target>Klein</target>
+            </trans-unit>
+			<trans-unit id="tt_content.section_frame_style.I.2.2" xml:space="preserve" approved="yes">
+                <source>Medium</source>
+				<target>Mittel</target>
+            </trans-unit>
+			<trans-unit id="tt_content.section_frame_style.I.2.3" xml:space="preserve" approved="yes">
+                <source>Large</source>
+				<target>Groß</target>
+            </trans-unit>
+
+			<!-- Table classes -->
+			<trans-unit id="tt_content.table.acctables_tableclass.I.default" xml:space="preserve" approved="yes">
+				<source>Normal</source>
+				<target>Normal</target>
+			</trans-unit>
+			<trans-unit id="tt_content.table.acctables_tableclass.I.striped" xml:space="preserve" approved="yes">
+				<source>striped</source>
+				<target>gestreift</target>
+			</trans-unit>
+			<trans-unit id="tt_content.table.acctables_tableclass.I.bordered" xml:space="preserve" approved="yes">
+				<source>bordered</source>
+				<target>mit Rahmen</target>
+			</trans-unit>
+			<trans-unit id="tt_content.table.acctables_tableclass.I.hover" xml:space="preserve" approved="yes">
+				<source>hover</source>
+				<target>Mouseover</target>
+			</trans-unit>
+			<trans-unit id="tt_content.table.acctables_tableclass.I.condensed" xml:space="preserve" approved="yes">
+				<source>condensed</source>
+				<target>enge Zellen</target>
+			</trans-unit>
+			<trans-unit id="tt_content.table.acctables_tableclass.I.striped_condensed_hover" xml:space="preserve" approved="yes">
+				<source>striped + hover + condensed</source>
+				<target>striped + hover + condensed</target>
+			</trans-unit>
+			<trans-unit id="tt_content.table.acctables_tableclass.I.bordered_hover" xml:space="preserve" approved="yes">
+				<source>bordered + hover</source>
+				<target>bordered + hover</target>
+			</trans-unit>
+
+			<!-- Content element: Header Layout -->
+			<trans-unit id="tt_content.header_layout.1" xml:space="preserve" approved="yes">
+				<source>Header 1</source>
+				<target>Überschrift 1</target>
+			</trans-unit>
+			<trans-unit id="tt_content.header_layout.2" xml:space="preserve" approved="yes">
+				<source>Header 2</source>
+				<target>Überschrift 2</target>
+			</trans-unit>
+			<trans-unit id="tt_content.header_layout.3" xml:space="preserve" approved="yes">
+				<source>Header 3</source>
+				<target>Überschrift 3</target>
+			</trans-unit>
+			<trans-unit id="tt_content.header_layout.4" xml:space="preserve" approved="yes">
+				<source>Header 4</source>
+				<target>Überschrift 4</target>
+			</trans-unit>
+			<trans-unit id="tt_content.header_layout.5" xml:space="preserve" approved="yes">
+				<source>Header 5</source>
+				<target>Überschrift 5</target>
+			</trans-unit>
+
+			<!-- gridelements:col2 -->
+			<trans-unit id="col2.title" xml:space="preserve" approved="yes">
+				<source>2 columns</source>
+				<target state="translated">2 Spalten</target>
+			</trans-unit>
+			<trans-unit id="col2.description" xml:space="preserve" approved="yes">
+				<source>Inserts a 2-columns grid for content.</source>
+				<target>Fügt ein zweipaltiges Rasterelement für Inhaltselemente ein.</target>
+			</trans-unit>
+			<!-- gridelements:col3 -->
+			<trans-unit id="col3.title" xml:space="preserve" approved="yes">
+				<source>3 columns</source>
+				<target state="translated">3 Spalten</target>
+			</trans-unit>
+			<trans-unit id="col3.description" xml:space="preserve" approved="yes">
+				<source>Inserts a 3-columns grid for content.</source>
+				<target>Fügt ein dreispaltiges Rasterelement für Inhaltselemente ein.</target>
+			</trans-unit>
+			<!-- gridelements:col4 -->
+			<trans-unit id="col4.title" xml:space="preserve" approved="yes">
+				<source>4 columns</source>
+				<target state="translated">4 Spalten</target>
+			</trans-unit>
+			<trans-unit id="col4.description" xml:space="preserve" approved="yes">
+				<source>Inserts a 4-columns grid for content.</source>
+				<target>Fügt ein vierspaltiges Rasterelement für Inhaltselemente ein.</target>
+			</trans-unit>
+			<!-- gridelements:row -->
+			<trans-unit id="row.title" xml:space="preserve" approved="yes">
+				<source>Row</source>
+				<target state="translated">Zeile</target>
+			</trans-unit>
+			<trans-unit id="row.description" xml:space="preserve" approved="yes">
+				<source>For use with responsive columns.</source>
+				<target>Für die Verwendung von responsive Layouts.</target>
+			</trans-unit>
+			<!-- gridelements:container -->
+			<trans-unit id="container.title" xml:space="preserve" approved="yes">
+				<source>Container</source>
+				<target state="translated">Container</target>
+			</trans-unit>
+			<trans-unit id="container.description" xml:space="preserve" approved="yes">
+				<source>For use with responsive containers.</source>
+				<target>Für die Verwendung von responsive Layouts.</target>
+			</trans-unit>
+			<!-- gridelements:accordion -->
+			<trans-unit id="accordion.title" xml:space="preserve" approved="yes">
+				<source>Accordion from content</source>
+				<target state="translated">Akkordeon aus Inhaltselementen</target>
+			</trans-unit>
+			<trans-unit id="accordion.description" xml:space="preserve" approved="yes">
+				<source>Each content element within the grid represents an accordion element. The title fields are used as accordion bar titles.</source>
+				<target>Jedes Inhaltselement innerhalb des Rasters wird als Akkordeon dargestellt. Der Titel wird als Tab-Titel verwendet.</target>
+			</trans-unit>
+			<!-- gridelements:tabs -->
+			<trans-unit id="tabs.title" xml:space="preserve" approved="yes">
+				<source>Tabs from content</source>
+				<target state="translated">Tabs aus Inhaltselementen</target>
+			</trans-unit>
+			<trans-unit id="tabs.description" xml:space="preserve" approved="yes">
+				<source>Each content element within the grid represents a tab. The title fields are used as tab titles.</source>
+				<target>Jedes Inhaltselement innerhalb des Rasters wird als Tab dargestellt. Der Titel wird als Tab-Titel verwendet.</target>
+			</trans-unit>
+			<!-- gridelements:timeline -->
+			<trans-unit id="timeline.title" xml:space="preserve" approved="yes">
+				<source>Timeline from content elements</source>
+				<target>Zeitleiste aus Inhaltselementen</target>
+			</trans-unit>
+			<trans-unit id="timeline.description" xml:space="preserve" approved="yes">
+				<source>Each content element within the grid represents a timeline element.</source>
+				<target>Jedes Inhaltselement innerhalb des Rasters wird als Zeitleistenelement dargestellt.</target>
+			</trans-unit>
+			<!-- gridelements:carousel -->
+			<trans-unit id="carousel.title" xml:space="preserve" approved="yes">
+				<source>Content carousel</source>
+				<target state="translated">Karussell aus Inhaltselementen</target>
+			</trans-unit>
+			<trans-unit id="carousel.description" xml:space="preserve" approved="yes">
+				<source>Each content element within the grid represents a carousel element.</source>
+				<target>Jedes Inhaltselement innerhalb des Rasters wird als Karussell-Element dargestellt.</target>
+			</trans-unit>
+
+			<!-- gridelements -->
+
+
+
+
+
+
+			<trans-unit id="celayout.column1" xml:space="preserve" approved="yes">
+				<source>1st column</source>
+				<target state="translated">1. Spalte</target>
+			</trans-unit>
+			<trans-unit id="celayout.column2" xml:space="preserve" approved="yes">
+				<source>2nd column</source>
+				<target state="translated">2. Spalte</target>
+			</trans-unit>
+			<trans-unit id="celayout.column3" xml:space="preserve" approved="yes">
+				<source>3rd column</source>
+				<target state="translated">3. Spalte</target>
+			</trans-unit>
+			<trans-unit id="celayout.column4" xml:space="preserve" approved="yes">
+				<source>4th column</source>
+				<target state="translated">4. Spalte</target>
+			</trans-unit>
+
+			<trans-unit id="celayout.columnElements" xml:space="preserve" approved="yes">
+				<source>Column elements</source>
+				<target state="translated">Spaltenelemente</target>
+			</trans-unit>
+			<trans-unit id="celayout.accordionElements" xml:space="preserve" approved="yes">
+				<source>Accordion elements</source>
+				<target state="translated">Akkordeon Elemente</target>
+			</trans-unit>
+			<trans-unit id="celayout.tabElements" xml:space="preserve" approved="yes">
+				<source>Tab elements</source>
+				<target state="translated">Tab Elemente</target>
+			</trans-unit>
+			<trans-unit id="celayout.carouselElements" xml:space="preserve" approved="yes">
+				<source>Carousel elements</source>
+				<target state="translated">Karussell Elemente</target>
+			</trans-unit>
+			<trans-unit id="celayout.timelineElements" xml:space="preserve" approved="yes">
+				<source>Timeline elements</source>
+				<target state="translated">Zeitleisten Elemente</target>
+			</trans-unit>
+
+			<trans-unit id="grid.sheet.md" xml:space="preserve" approved="yes">
+				<source>Desktop (&gt;=992px)</source>
+				<target state="translated">Desktop (&gt;=992px)</target>
+			</trans-unit>
+			<trans-unit id="grid.sheet.sm" xml:space="preserve" approved="yes">
+				<source>Small devices (&gt;=768px)</source>
+				<target state="translated">Tablets (&gt;=768px)</target>
+			</trans-unit>
+			<trans-unit id="grid.sheet.xs" xml:space="preserve" approved="yes">
+				<source>Extra small (&lt;768px)</source>
+				<target state="translated">Mobilgeräte (&lt;768px)</target>
+			</trans-unit>
+			<trans-unit id="grid.sheet.lg" xml:space="preserve" approved="yes">
+				<source>Large (&gt;=1200px)</source>
+				<target state="translated">Grosse Screens (&gt;=1200px)</target>
+			</trans-unit>
+			<trans-unit id="grid.sheet.classes" xml:space="preserve" approved="yes">
+				<source>Custom classes</source>
+				<target state="translated">Weitere class-Attribute</target>
+			</trans-unit>
+			<trans-unit id="grid.sheet.gridConfig" xml:space="preserve" approved="yes">
+				<source>Container configuration</source>
+				<target state="translated">Container Konfiguration</target>
+			</trans-unit>
+
+			<trans-unit id="grid.label.gridClasses" xml:space="preserve" approved="yes">
+				<source>Container classes</source>
+				<target state="translated">Container Classes</target>
+			</trans-unit>
+			<trans-unit id="grid.label.moreWidth" xml:space="preserve" approved="yes">
+				<source>More width</source>
+				<target state="translated">Weitere Breite</target>
+			</trans-unit>
+			<trans-unit id="grid.label.notset" xml:space="preserve" approved="yes">
+				<source>not set</source>
+				<target state="translated">nicht gesetzt</target>
+			</trans-unit>
+			<trans-unit id="grid.label.moreOptions" xml:space="preserve" approved="yes">
+				<source>More options</source>
+				<target state="translated">Weitere Optionen</target>
+			</trans-unit>
+			<trans-unit id="grid.label.special" xml:space="preserve" approved="yes">
+				<source>Special</source>
+				<target state="translated">Spezial</target>
+			</trans-unit>
+			<trans-unit id="grid.label.hidden" xml:space="preserve" approved="yes">
+				<source>hidden</source>
+				<target state="translated">verstecken</target>
+			</trans-unit>
+			<trans-unit id="grid.label.visible" xml:space="preserve" approved="yes">
+				<source>visible</source>
+				<target state="translated">anzeigen</target>
+			</trans-unit>
+
+			<trans-unit id="grid.sheet.animation" xml:space="preserve" approved="yes">
+				<source>Animation</source>
+				<target state="translated">Animation</target>
+			</trans-unit>
+			<trans-unit id="grid.sheet.controls" xml:space="preserve" approved="yes">
+				<source>Controls</source>
+				<target state="translated">Steuerelemente</target>
+			</trans-unit>
+			<trans-unit id="grid.sheet.options" xml:space="preserve" approved="yes">
+				<source>Options</source>
+				<target state="translated">Optionen</target>
+			</trans-unit>
+
+			<trans-unit id="grid.sheet.layout" xml:space="preserve" approved="yes">
+				<source>Layout</source>
+				<target state="translated">Layout</target>
+			</trans-unit>
+			<trans-unit id="grid.label.style" xml:space="preserve" approved="yes">
+				<source>Style</source>
+				<target state="translated">Stil</target>
+			</trans-unit>
+
+			<trans-unit id="grid.label.none" xml:space="preserve" approved="yes">
+				<source>none</source>
+				<target state="translated">keine</target>
+			</trans-unit>
+			<trans-unit id="grid.label.yes" xml:space="preserve" approved="yes">
+				<source>yes</source>
+				<target state="translated">ja</target>
+			</trans-unit>
+			<trans-unit id="grid.label.no" xml:space="preserve" approved="yes">
+				<source>no</source>
+				<target state="translated">nein</target>
+			</trans-unit>
+
+			<trans-unit id="sys_file_reference.display_mode" xml:space="preserve" approved="yes">
+                <source>Usage</source>
+                <target>Verwendung</target>
+            </trans-unit>
+			<trans-unit id="sys_file_reference.display_mode.I.0" xml:space="preserve" approved="yes">
+                <source>Use as Background</source>
+                <target>Als Hintergrund verwenden</target>
+            </trans-unit>
+			<trans-unit id="sys_file_reference.display_mode.I.1" xml:space="preserve" approved="yes">
+                <source>Use in Layout</source>
+                <target>Im Layout verwenden</target>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>

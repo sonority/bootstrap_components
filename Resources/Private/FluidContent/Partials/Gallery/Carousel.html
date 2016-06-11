@@ -1,0 +1,59 @@
+<html
+	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	xmlns:bc="http://typo3.org/ns/Sonority/BootstrapComponents/ViewHelpers"
+	xmlns:colorbox="http://typo3.org/ns/Sonority/LibJqueryColorbox/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+
+	<div id="image-carousel-{data.uid}"{bc:attribute(values:{0:'carousel slide carousel-lazyload',1:'image-carousel',2:'carousel-img-{data.gallery_carousel}'})} data-ride="carousel" data-interval="10000" data-pause="hover" data-wrap="true">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<f:for each="{files}" as="media" iteration="iterator">
+				<li data-target="#image-carousel-{data.uid}" data-slide-to="{iterator.index}" class="{f:if(condition:'{iterator.isFirst}',then:'active')}"></li>
+			</f:for>
+		</ol>
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<f:for each="{gallery.rows}" as="row" iteration="iterator">
+				<f:for each="{row.columns}" as="column">
+					<f:if condition="{column.media}">
+						<div class="ce-media lazyload item{f:if(condition:'{iterator.isFirst}',then:' active')}">
+							<f:if condition="{data.image_zoom}">
+								<f:then>
+									<colorbox:link.clickEnlarge image="{column.media}" configuration="{settings.media.popup}">
+										<f:render section="media" arguments="{_all}" />
+									</colorbox:link.clickEnlarge>
+								</f:then>
+								<f:else>
+									<f:render section="media" arguments="{_all}" />
+								</f:else>
+							</f:if>
+							<div class="carousel-caption">{mediaElement.title}	</div>
+						</div>
+					</f:if>
+				</f:for>
+			</f:for>
+		</div>
+		<!-- Controls -->
+		<div class="carousel-control-group">
+			<a class="left carousel-control" href="#image-carousel-{data.uid}" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only"><f:translate key="LLL:EXT:bootstrap_components/Resources/Private/Language/locallang.xlf:previous" /></span>
+			</a>
+			<a class="right carousel-control" href="#image-carousel-{data.uid}" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only"><f:translate key="LLL:EXT:bootstrap_components/Resources/Private/Language/locallang.xlf:next" /></span>
+			</a>
+		</div>
+	</div>
+
+	<f:section name="media">
+		<f:media
+			class="lazyload img-lazy-carousel {f:if(condition: imageShape, then: ' {imageShape}')} type-{column.media.extension}{f:if(condition: data.image_responsive, then: ' img-responsive')}"
+			file="{column.media}"
+			width="{column.dimensions.width}"
+			height="{column.dimensions.height}"
+			alt="{column.media.alternative}"
+			title="{column.media.title}"
+			/>
+	</f:section>
+</html>

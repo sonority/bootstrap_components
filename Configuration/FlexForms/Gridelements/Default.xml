@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sLayout>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:grid.sheet.layout</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<rowclass>
+						<TCEforms>
+							<label>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:grid.label.style</label>
+							<config>
+								<type>select</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:grid.label.none</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">Style 1</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">Style 2</numIndex>
+										<numIndex index="1">2</numIndex>
+									</numIndex>
+									<numIndex index="3">
+										<numIndex index="0">Style 3</numIndex>
+										<numIndex index="1">3</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</rowclass>
+				</el>
+			</ROOT>
+		</sLayout>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:grid.sheet.gridConfig</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <gridClasses>
+                        <TCEforms>
+                            <label>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:grid.label.gridClasses</label>
+                            <config>
+                                <type>input</type>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </gridClasses>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

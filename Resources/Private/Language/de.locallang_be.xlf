@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-12-14T13:07:39Z" product-name="bootstrap_components">
+		<header/>
+		<body>
+			<trans-unit id="tt_content.palette.displaySettings" xml:space="preserve" approved="yes">
+				<source>Display Settings</source>
+				<target>Anzeige-Einstellungen</target>
+			</trans-unit>
+
+			<trans-unit id="gridelements.sheet.options" xml:space="preserve" approved="yes">
+				<source>Options</source>
+				<target state="translated">Optionen</target>
+			</trans-unit>
+			<trans-unit id="gridelements.sheet.layout" xml:space="preserve" approved="yes">
+				<source>Layout</source>
+				<target state="translated">Layout</target>
+			</trans-unit>
+			<trans-unit id="gridelements.sheet.gridConfig" xml:space="preserve" approved="yes">
+				<source>Configuration</source>
+				<target state="translated">Konfiguration</target>
+			</trans-unit>
+
+			<trans-unit id="gridelements.shared.gridClasses" xml:space="preserve" approved="yes">
+				<source>CSS classes</source>
+				<target state="translated">CSS-Klasse</target>
+			</trans-unit>
+			<trans-unit id="gridelements.shared.layout" xml:space="preserve" approved="yes">
+				<source>Style</source>
+				<target state="translated">Stil</target>
+			</trans-unit>
+
+			<trans-unit id="gridelements.carousel.interval" xml:space="preserve" approved="yes">
+				<source>Interval</source>
+				<target state="translated">Intervall</target>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.effect" xml:space="preserve" approved="yes">
+				<source>Animation effect</source>
+				<target state="translated">Animationseffekt</target>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.effect.I.0" xml:space="preserve" approved="yes">
+				<source>no effect</source>
+				<target state="translated">Kein Effekt</target>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.effect.I.1" xml:space="preserve" approved="yes">
+				<source>Slide</source>
+				<target state="translated">Slide</target>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.effect.I.2" xml:space="preserve" approved="yes">
+				<source>Fade</source>
+				<target state="translated">Überblenden</target>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.autostart" xml:space="preserve" approved="yes">
+				<source>Autostart</source>
+				<target state="translated">automatischer Start</target>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.showControls" xml:space="preserve" approved="yes">
+				<source>Show controls</source>
+				<target state="translated">Zeige Steuerelemente</target>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.showIndicators" xml:space="preserve" approved="yes">
+				<source>Show indicators</source>
+				<target state="translated">Zeige Indikatoren</target>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.pauseOnHover" xml:space="preserve" approved="yes">
+				<source>Pause on mouseover</source>
+				<target state="translated">Pause bei Mouseover</target>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.wrap" xml:space="preserve" approved="yes">
+				<source>Loop</source>
+				<target state="translated">Endlosschleife</target>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.minHeight" xml:space="preserve" approved="yes">
+				<source>Minimum height</source>
+				<target state="translated">Mindesthöhe</target>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.maxHeight" xml:space="preserve" approved="yes">
+				<source>Maximum height</source>
+				<target state="translated">Maximale Höhe</target>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.layout.I.0" xml:space="preserve" approved="yes">
+				<source>Default</source>
+				<target state="translated">Standard</target>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.layout.I.1" xml:space="preserve" approved="yes">
+				<source>Header slide</source>
+				<target state="translated">Header Slide</target>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.layout.I.2" xml:space="preserve" approved="yes">
+				<source>Group of content elements</source>
+				<target state="translated">Gruppe aus Inhaltselements</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

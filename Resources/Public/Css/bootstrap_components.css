@@ -1,0 +1,395 @@
+.align-left {
+	text-align: left;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+.align-justify {
+	text-align: justify;
+}
+/* Table */
+/*
+.ce-table.text-left caption {
+	text-align: left;
+}
+.ce-table.text-center caption {
+	text-align: center;
+}
+.ce-table.text-right caption {
+	text-align: right;
+}
+.ce-table.text-justify caption {
+	text-align: justify;
+}
+*/
+/*
+.ce-table td,
+.ce-table th {
+	vertical-align: top;
+}
+.ce-table tfoot {
+    font-weight: bold;
+}
+*/
+
+
+
+/* Textpic */
+.ce-gallery,
+.ce-media {
+	overflow: hidden;
+}
+.ce-bodytext {
+	z-index: 98;
+}
+/* Correct unordered list position if intext */
+.ce-bodytext ul {
+    /*list-style-position: inside;*/
+	display: table;
+}
+.ce-gallery {
+	z-index: 99;
+}
+.ce-gallery figure {
+	display: table;
+	margin: 0 auto;
+	width: 100%;
+}
+.ce-left > .ce-gallery figure {
+	margin-left: 0;
+}
+.ce-right > .ce-gallery figure {
+	margin-right: 0;
+}
+.ce-gallery figcaption {
+	display: table-caption;
+	caption-side: bottom;
+}
+.ce-gallery img {
+	display: block;
+}
+.ce-gallery iframe {
+	border-width: 0;
+}
+.ce-border img,
+.ce-border iframe {
+	/* {$styles.content.textmedia.borderWidth} */
+	/* {$styles.content.textmedia.borderColor} */
+	border: 1px solid grey;
+	/* {$styles.content.textmedia.borderPadding} */
+	padding: 10px;
+}
+
+/* Image-captions */
+.ce-gallery figure figcaption {
+    font-size: 90%;
+	font-style: italic;
+	margin-top: 4px;
+}
+@media (max-width: 992px) {
+	.ce-gallery figure figcaption {
+		font-size: 70%;
+	}
+}
+
+.ce-above > .ce-gallery,
+.ce-below > .ce-gallery {
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+}
+.ce-left.ce-intext.ce-wrap > .ce-bodytext,
+.ce-right.ce-intext.ce-wrap > .ce-bodytext {
+	float: none;
+    width: 100%;
+}
+
+/**
+ * Margins left/right
+ */
+.ce-left.ce-above > .ce-gallery,
+.ce-left.ce-below > .ce-gallery {
+	margin-left: 0;
+}
+.ce-right.ce-above > .ce-gallery,
+.ce-right.ce-below > .ce-gallery {
+	margin-right: 0;
+}
+.ce-left.ce-intext.ce-wrap > .ce-gallery {
+	margin-right: 15px;
+}
+.ce-right.ce-intext.ce-wrap > .ce-gallery {
+	margin-left: 15px;
+    float: right;
+}
+
+/**
+ * Margins top/bottom
+ */
+.ce-gallery > .row,
+.ce-gallery > .row .ce-media {
+	/* {$styles.content.textmedia.rowSpacing} */
+	margin-bottom: 10px;
+}
+.ce-gallery > .row figure .ce-media,
+.ce-gallery > .row:last-child,
+.ce-gallery > .row:last-child .ce-media {
+	margin-bottom: 0;
+}
+.ce-intext.ce-nowrap .ce-gallery {
+    margin-top: 10px;
+	margin-bottom: 10px;
+}
+.ce-above .ce-gallery {
+	padding-bottom: 10px;
+}
+.ce-below .ce-gallery {
+	padding-top: 10px;
+}
+.ce-intext.ce-wrap > .ce-gallery,
+.ce-intext.ce-wrap > .ce-gallery {
+	margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+	.ce-intext.ce-nowrap .col-xs-12.ce-gallery {
+		margin-bottom: 0;
+	}
+}
+
+
+
+/* Default settings for backgrounds */
+.img-layout,
+.img-background {
+	background-repeat: no-repeat;
+    background-position: center center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	padding: 15px;
+}
+/* Responsive video */
+.responsive-video figure {
+	width: 100%;
+}
+.responsive-video .ce-video {
+    height: 0;
+    padding-top: 1px;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+.responsive-video .ce-video > iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+
+/* Uploads */
+.ce-uploads li,
+.ce-uploads div {
+	overflow: hidden;
+}
+.ce-uploads {
+	margin: 0;
+	padding: 0;
+}
+.ce-uploads li {
+	list-style: none outside none;
+	margin: 1em 0;
+}
+.ce-uploads img {
+	float: left;
+	padding-right: 1em;
+	vertical-align: top;
+}
+.ce-uploads span {
+	display: block;
+}
+
+
+
+/* Layout: Thumbnail */
+.ce-layout .thumbnail .caption {
+    display: table;
+	width: 100%;
+}
+.ce-layout .thumbnail .thumbnail-icon,
+.ce-layout .thumbnail .thumbnail-content {
+    display: table-cell;
+}
+.ce-layout .thumbnail .thumbnail-icon {
+	font-size: 34px;
+    vertical-align: top;
+    padding-right: 13px;
+}
+
+
+
+/* Correct spaces in accordion-layouts */
+.panel-body {
+    padding: 0;
+}
+.panel-body > div {
+    padding: 15px;
+}
+
+
+
+/* Correct spaces in tabs-layouts */
+.tab-content .tab-pane > div {
+    padding-top: 10px;
+}
+.tab-content .tab-pane > .wrap-empty.img-background {
+    padding-bottom: 5px;
+}
+
+
+
+/* Correct spaces in carousel-layouts */
+.wrap-empty.img-background > div > .carousel {
+    margin: -15px;
+}
+.carousel-inner > div .wrap-empty.img-background {
+    padding: 0;
+}
+
+/* Caoursel, Layout 1 */
+.carousel-1 .item {
+	/*height: 400px;*/
+}
+.carousel-1 .item > div,
+.carousel-1 .item > div > .container {
+	height: 100%;
+}
+.carousel.carousel-1 .ce-layout {
+    display: table-cell;
+    /*height: 400px;*/
+    vertical-align: middle;
+}
+
+
+
+/*
+inspired from http://codepen.io/Rowno/pen/Afykb
+*/
+.carousel-fade .carousel-inner .item {
+	opacity: 0;
+	transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+	opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	left: 0;
+	opacity: 0;
+	z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+	opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+	z-index: 2;
+}
+
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
+/* Centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+	vertical-align: top;
+}
+.col-fixed {
+    /* custom width */
+    width: 320px;
+}
+.col-min {
+    /* custom min width */
+    min-width: 320px;
+}
+.col-max {
+    /* custom max width */
+    max-width: 320px;
+}
+
+acronym[title] {
+	border-bottom: 1px dotted;
+}
+acronym[title],
+acronym[data-original-title] {
+	cursor: help;
+	border-bottom: 1px dotted #777;
+}
+
+
+
+/* debug */
+/*
+.ce-layout header {
+	border: 1px dashed violet;
+}
+.ce-bodytext {
+	border: 1px dashed blue;
+}
+.ce-gallery {
+    border: 1px dashed red;
+}
+.wrap-default {
+	border-top: 1px dashed lightgrey;
+}
+*/
+
+
+
+
+
+/*.ce-gallery figure {
+	width: 100%;
+}*/

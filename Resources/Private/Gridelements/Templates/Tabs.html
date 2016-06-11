@@ -1,0 +1,37 @@
+<html
+	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	xmlns:bc="http://typo3.org/ns/Sonority/BootstrapComponents/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+
+	<f:format.raw>
+		<div id="tab-{data.uid}"{bc:attribute(values:{0:'panel-group',1:gridClasses})}>
+			<f:if condition="{data.tx_gridelements_view_children}">
+				<f:then>
+					<div class="tab-v1">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<f:for each="{data.tx_gridelements_view_children}" as="child" iteration="iterator">
+								<li role="presentation" class="{f:if(condition:'{iterator.isFirst}',then:'active')}">
+									<a href="#tab-item-{child.uid}" aria-controls="tab-item-{child.uid}" role="tab" data-toggle="tab">
+										<f:if condition="{child.header_icon}"><span class="{child.header_icon}"></span> </f:if>{child.header}
+									</a>
+								</li>
+							</f:for>
+						</ul>
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<f:for each="{data.tx_gridelements_view_children}" as="child" iteration="iterator">
+								<div role="tabpanel" class="tab-pane fade{f:if(condition:'{iterator.isFirst}',then:' in active')}" id="tab-item-{child.uid}">
+									<bc:variableObject data="{data}" keys="{0:'tx_gridelements_view_child_',1:child.uid}" />
+								</div>
+							</f:for>
+						</div>
+					</div>
+				</f:then>
+				<f:else>
+					<span class="">no content elements found</span>
+				</f:else>
+			</f:if>
+		</div>
+	</f:format.raw>
+</html>

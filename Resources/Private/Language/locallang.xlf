@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-02-23T13:38:42Z" product-name="bootstrap_components">
+		<header/>
+		<body>
+			<trans-unit id="close">
+				<source>Close</source>
+			</trans-unit>
+			<trans-unit id="previous">
+				<source>Previous</source>
+			</trans-unit>
+			<trans-unit id="next">
+				<source>Next</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

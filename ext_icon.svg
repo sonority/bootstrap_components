@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="156"
+   height="156"
+   id="svg2984">
+  <title
+     id="title4086">lib_bootstrap</title>
+  <defs
+     id="defs2986" />
+  <metadata
+     id="metadata2989">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>lib_bootstrap</dc:title>
+        <dc:date>04.12.2015</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>stephan.kellermayr@gmail.com</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>sonority.at</dc:title>
+          </cc:Agent>
+        </dc:rights>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-93.428574,-345.79375)"
+     id="layer1">
+    <rect
+       width="156"
+       height="156"
+       x="93.428574"
+       y="345.79376"
+       id="background"
+       style="fill:#5d4381;fill-opacity:1" />
+    <path
+       d="M 47.9375,34.90625 C 40.01751,34.90625 26.09375,36 26.09375,36 l 0,82.4375 L 25.875,119.625 26.09375,120 46.875,156 156,156 156,85.6875 127.875,36.96875 c -3.48,-0.96 -10.435,-1.8125 -14.875,-1.8125 -18.35998,0 -28.5625,6.36502 -28.5625,24.125 0,3.161459 0.276804,5.964089 0.84375,8.46875 L 71.75,44.34375 c -0.09302,-0.169896 -0.183022,-0.335013 -0.28125,-0.5 -3.679655,-6.180472 -11.028766,-8.9375 -23.53125,-8.9375 z"
+       transform="translate(93.428574,345.79375)"
+       id="shadow"
+       style="font-size:120px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:0.39215686;stroke:none;font-family:Share-Bold;-inkscape-font-specification:Share-Bold" />
+    <path
+       d="m 223.34357,440.83376 c 0,-17.87998 -7.80001,-23.76 -19.32,-26.16 -7.55999,-1.56 -9.48,-3.24001 -9.48,-10.92 0,-6.11999 3.84001,-8.64 10.68,-8.64 4.2,0 12.00001,0.84 16.08,1.8 l 0,-14.16 c -3.48,-0.96 -10.44,-1.8 -14.88,-1.8 -18.35998,0 -28.56,6.36002 -28.56,24.12 0,14.03999 5.28001,21.36 18.6,24.12 6.47999,1.32 10.2,4.08001 10.2,12.84 0,7.67999 -4.80001,10.44 -12.24,10.44 -4.67999,0 -12.12,-0.96 -15.84,-1.92 l 0,14.28 c 4.08,1.08 11.76001,1.8 17.04,1.8 15.95999,0 27.72,-3.24002 27.72,-25.8 m -69.87,-0.72 c 0,7.67999 -2.28001,12.36 -8.88,12.36 -4.43999,0 -8.64,-0.36 -8.64,-0.36 l 0,-23.76 7.2,0 c 5.4,0 10.32,2.64001 10.32,11.76 m -1.8,-35.52 c 0,7.31999 -2.64001,10.32 -9.36,10.32 l -6.36,0 0,-19.44 c 0,0 4.08001,-0.48 8.04,-0.48 4.8,0 7.68,3.60001 7.68,9.6 m 18.48,35.4 c 0,-12.95998 -6.60001,-18.72 -12.96,-19.44 5.16,-1.44 10.68,-5.64001 10.68,-17.04 0,-16.07998 -6.96002,-22.8 -26.52,-22.8 -7.91999,0 -21.84,1.08 -21.84,1.08 l 0,84 c 0,0 13.68001,1.08 23.76,1.08 15.23999,0 26.88,-4.56002 26.88,-26.88"
+       id="icon"
+       style="font-size:120px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Share-Bold;-inkscape-font-specification:Share-Bold" />
+  </g>
+</svg>

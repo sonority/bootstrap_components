@@ -1,0 +1,16 @@
+<html
+	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	xmlns:bc="http://typo3.org/ns/Sonority/BootstrapComponents/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+
+	<div id="c{data.uid}"{bc:attribute(values:{0:wrap,1:sectionFrame,2:backgroundMedia.class})}{bc:attribute(name:'style',values:{0:backgroundMedia.style})}>
+		<div{bc:attribute(values:{0:container})}>
+			<div{bc:attribute(values:{0:'ce-layout',1:layoutStyle,2:layoutMedia.class})}{bc:attribute(name:'style',values:{0:layoutMedia.style})}>
+				<blockquote>
+					<f:render section="content" />
+					<f:render partial="Footer" arguments="{_all}" />
+				</blockquote>
+			</div>
+		</div>
+	</div>
+</html>

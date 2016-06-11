@@ -1,0 +1,4 @@
+# cat=basic/enable/101; type=boolean; label=Set PageTsConfig for RTE: If set, the Page TsConfig for rtehtmlarea is automatically included
+setRteTSconfig = 1
+# cat=basic/enable/102; type=boolean; label=Set PageTsConfig: If set, the Page TsConfig is automatically included
+setPageTSconfig = 1

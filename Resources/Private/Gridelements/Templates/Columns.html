@@ -1,0 +1,15 @@
+<html
+	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	xmlns:bc="http://typo3.org/ns/Sonority/BootstrapComponents/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+
+	<f:format.raw>
+		<div{bc:attribute(values:{0:'row',1:gridClasses})}>
+			<f:for each="{data.tx_gridelements_view_columns}" as="element" key="key" iteration="iterator">
+				<div class="{bc:variableObject(data:classes,keys:{0:iterator.cycle})}">
+					<bc:variableObject data="{data.tx_gridelements_view_columns}" keys="{0:key}" />
+				</div>
+			</f:for>
+		</div>
+	</f:format.raw>
+</html>

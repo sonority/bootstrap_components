@@ -1,0 +1,7 @@
+@import url('../../../../../../../typo3/sysext/rtehtmlarea/Resources/Public/Css/Skin/htmlarea.css');
+
+.htmlarea .btn:active,
+.htmlarea .btn.active {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}

@@ -1,0 +1,36 @@
+styles.content {
+	# cat=content/cHeader/h1; type=options[,Center=1,Right=2,Left=3]; label=Default Header position: Enter the number of the header position to be used by default
+	defaultHeaderPosition = 0
+	# cat=content/cHeader/h2; type=int+; label=Default Header style: Enter the number of the header style to be used by default
+	defaultHeaderStyle = 0
+	# cat=content/cTextmedia/d1; type=options[8%=1,17%=2,25%=3,33%=4,42%=5,50%=6,58%=7,67%=8,75%=9,83%=10]; label=Max Image/Media Block-Width: This specifies the width of the gallery-block relating to the text-block. The number entered here represents the amount of used grid-columns in bootstrap (there are 12 columns available).
+	defaultGalleryWidth = 4
+	# cat=content/cTextmedia/d1; type=int+; label=Default Image Shape: Enter the number of the image shape to be used by default
+	defaultImageShape = 0
+	# cat=content/cTextmedia/d1; type=int+; label=Default section frame: Enter the number of the section frame to be used by default
+	defaultSectionFrame = 0
+
+	textmedia {
+		maxW = 1140
+		# Sets the minimum width of ALL images
+		# This value should not be smaller than 737, because the width of the imageblock is controlled by bootstrap-colums
+		maxWInText = 737
+
+		#columnSpacing = 30
+		#rowSpacing = 30
+		#textMargin = 20
+		columnSpacing = 30
+		rowSpacing = 30
+		textMargin = 0
+
+		borderColor = grey
+		borderWidth = 1
+		borderPadding = 0
+
+		linkWrap.width = 1200m
+		linkWrap.height = 700m
+	}
+	loginform {
+		templateFile = EXT:bootstrap_components/Resources/Private/FluidContent/Templates/FrontendLogin.html
+	}
+}

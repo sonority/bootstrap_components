@@ -1,0 +1,49 @@
+<html
+	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	xmlns:bc="http://typo3.org/ns/Sonority/BootstrapComponents/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+
+	<f:format.raw>
+		<div id="carousel-{data.uid}"
+			 {bc:attribute(values:{0:'carousel',1:'carousel-{data.flexform_rowclass}',2:data.flexform_effect,3:gridClasses})}
+			 {f:if(condition:'{data.flexform_autostart}',then:' data-ride="carousel"')}
+			 data-interval="{data.flexform_interval}"
+			 {f:if(condition:'{data.flexform_pauseOnHover}',then:' data-pause="hover"')}
+			 {f:if(condition:'{data.flexform_wrap}',then:' data-wrap="true"')}
+			 >
+			<f:if condition="{data.flexform_rowclass} == '1'">
+				<div class="carousel-headeroverlay"></div>
+			</f:if>
+			<f:if condition="{data.flexform_showIndicators}">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<f:for each="{data.tx_gridelements_view_children}" as="child" iteration="iterator">
+						<li data-target="#carousel-{data.uid}" data-slide-to="{iterator.index}" class="{f:if(condition:'{iterator.isFirst}',then:'active')}"></li>
+					</f:for>
+				</ol>
+			</f:if>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<f:for each="{data.tx_gridelements_view_children}" as="child" iteration="iterator">
+					<div class="item{f:if(condition:'{iterator.isFirst}',then:' active')}"{bc:attribute(name:'style',values:{height:data.flexform_minHeight,max-height:data.flexform_maxHeight},useKey:1)}>
+						<bc:variableObject data="{data}" keys="{0:'tx_gridelements_view_child_',1:child.uid}" />
+						<div class="carousel-caption">{child.title}	</div>
+					</div>
+				</f:for>
+			</div>
+			<f:if condition="{data.flexform_showControls}">
+				<!-- Controls -->
+				<div class="carousel-control-group">
+					<a class="left carousel-control" href="#carousel-{data.uid}" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only"><f:translate key="LLL:EXT:bootstrap_components/Resources/Private/Language/locallang.xlf:previous" /></span>
+					</a>
+					<a class="right carousel-control" href="#carousel-{data.uid}" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only"><f:translate key="LLL:EXT:bootstrap_components/Resources/Private/Language/locallang.xlf:next" /></span>
+					</a>
+				</div>
+			</f:if>
+		</div>
+	</f:format.raw>
+</html>

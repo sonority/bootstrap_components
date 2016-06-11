@@ -1,0 +1,138 @@
+#-------------------------------------------------------------------------------
+#	Content elements
+#-------------------------------------------------------------------------------
+TCEFORM.tt_content {
+	header_layout {
+		altLabels {
+			#1 = LLL:EXT:et_template/Resources/Private/Language/locallang_be.xlf:tt_content.header_layout.1
+			#2 = LLL:EXT:et_template/Resources/Private/Language/locallang_be.xlf:tt_content.header_layout.2
+			#3 = LLL:EXT:et_template/Resources/Private/Language/locallang_be.xlf:tt_content.header_layout.3
+			#4 = LLL:EXT:et_template/Resources/Private/Language/locallang_be.xlf:tt_content.header_layout.4
+			#5 = LLL:EXT:et_template/Resources/Private/Language/locallang_be.xlf:tt_content.header_layout.5
+		}
+	}
+	# Sections
+	section_frame {
+		#removeItems = 11,12
+		addItems {
+
+		}
+	}
+
+	# Change layouts
+	layout {
+		#removeItems = 1,2,3
+		altLabels {
+			# Jumbotron
+			1 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.layout.I.1
+			# Thumbnail
+			2 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.layout.I.2
+			# Alerts
+			3 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.layout.I.3
+		}
+		addItems {
+			# Panel
+			4 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.layout.I.4
+			# Well
+			5 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.layout.I.5
+			# Blockquote
+			6 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.layout.I.6
+			# Box
+			7 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.layout.I.7
+			# Modal
+			8 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.layout.I.8
+			# Citation
+			9 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.layout.I.9
+		}
+	}
+	layout_style {
+		addItems {
+			# Jumbotron
+			1-1 = Style 1
+			1-2 = Style 2
+			1-3 = Style 3
+			# Thumbnail
+			2-1 = Style 1
+			2-2 = Style 2
+			2-3 = Style 3
+			# Alert
+			3-1 = Success
+			3-2 = Info
+			3-3 = Warning
+			3-4 = Danger
+			# Panel
+			4-1 = Default
+			4-2 = Primary
+			4-3 = Success
+			4-4 = Info
+			4-5 = Warning
+			4-6 = Danger
+			# Well
+			5-1 = Normal
+			5-2 = Small
+			5-3 = Large
+			# Blockquote
+			6-1 = Style 1
+			6-2 = Style 2
+			6-3 = Style 3
+			# Box
+			7-1 = Style 1
+			7-2 = Style 2
+			7-3 = Style 3
+			# Modal
+			#8-1 = Default
+		}
+	}
+	imagecols {
+		removeItems = 5,7,8
+		addItems {
+			12 = 12
+		}
+	}
+	section_frame_style {
+		addItems {
+			# Divider above
+			1-1 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.section_frame_style.I.1.1
+			1-2 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.section_frame_style.I.1.2
+			1-3 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.section_frame_style.I.1.3
+			# Divider below
+			2-1 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.section_frame_style.I.1.1
+			2-2 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.section_frame_style.I.1.2
+			2-3 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.section_frame_style.I.1.3
+			# Divider above/below
+			3-1 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.section_frame_style.I.1.1
+			3-2 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.section_frame_style.I.1.2
+			3-3 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.section_frame_style.I.1.3
+			# Space before
+			4-1 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.section_frame_style.I.2.1
+			4-2 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.section_frame_style.I.2.2
+			4-3 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.section_frame_style.I.2.3
+			# Space before
+			5-1 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.section_frame_style.I.2.1
+			5-2 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.section_frame_style.I.2.2
+			5-3 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.section_frame_style.I.2.3
+			# Space above/before
+			6-1 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.section_frame_style.I.2.1
+			6-2 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.section_frame_style.I.2.2
+			6-3 = LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:tt_content.section_frame_style.I.2.3
+		}
+	}
+}
+
+
+#-------------------------------------------------------------------------------
+# Defaults for new elements
+#-------------------------------------------------------------------------------
+TCAdefaults {
+	tt_content {
+#		header_layout = 2
+#		header_style = 1
+		wrap = 0
+		image_responsive = 1
+	}
+}
+
+#-------------------------------------------------------------------------------
+#	RTE
+#-------------------------------------------------------------------------------
+#<INCLUDE_TYPOSCRIPT: source="FILE:./Rte.txt">

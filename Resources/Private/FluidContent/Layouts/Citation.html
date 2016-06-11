@@ -1,0 +1,39 @@
+<html
+	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	xmlns:bc="http://typo3.org/ns/Sonority/BootstrapComponents/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+
+	<div id="c{data.uid}"{bc:attribute(values:{0:wrap,1:sectionFrame,2:backgroundMedia.class})}{bc:attribute(name:'style',values:{0:backgroundMedia.style})}>
+		<div{bc:attribute(values:{0:container})}>
+			<div{bc:attribute(values:{0:'ce-layout',1:layoutStyle})}>
+				<div{bc:attribute(values:{0:'citation-in',1:layoutMedia.class})}{bc:attribute(name:'style',values:{0:layoutMedia.style})}>
+					<f:format.html>{data.bodytext}</f:format.html>
+				</div>
+				<f:if condition="{files.0}">
+					<div class="ce-media lazyload" data-expand="-10">
+						<f:alias map="{media: files.0}">
+							<f:media
+								class="lazyload ce-media{f:if(condition: imageShape, then: ' {imageShape}')}{f:if(condition: data.image_responsive, then: ' img-responsive')}"
+								file="{media}"
+								width="{f:if(condition:'{data.imagewidth}',then:'{data.imagewidth}',else:'90')}"
+								height="{f:if(condition:'{data.imageheight}',then:'{data.imageheight}',else:'90')}"
+								alt="{media.alternative}"
+								title="{media.title}"
+								/>
+							<f:if condition="{media.title}">
+								<span class="citation-author">
+									<f:format.raw>{media.title}</f:format.raw>
+								</span>
+							</f:if>
+							<f:if condition="{media.description}">
+								<div class="citation-description">
+									<f:format.html>{media.description}</f:format.html>
+								</div>
+							</f:if>
+						</f:alias>
+					</div>
+				</f:if>
+			</div>
+		</div>
+	</div>
+</html>

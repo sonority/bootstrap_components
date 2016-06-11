@@ -1,0 +1,29 @@
+<html
+	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	xmlns:bc="http://typo3.org/ns/Sonority/BootstrapComponents/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+
+	<f:layout name="{layoutName}" />
+
+	<f:section name="content">
+		<f:if condition="{gallery.position.headerAboveContent}">
+			<f:render partial="Header" arguments="{_all}" />
+		</f:if>
+		<div class="ce-textpic ce-{gallery.position.horizontal} ce-{gallery.position.vertical} ce-{gallery.position.wrap}{f:if(condition: gallery.rows, then: ' row')}">
+			<f:if condition="{gallery.position.galleryAboveContent}">
+				<f:render partial="MediaGallery" arguments="{_all}" />
+			</f:if>
+			<div class="{f:if(condition: gallery.rows, then: gallery.contentClass)} ce-bodytext">
+				<f:if condition="{gallery.position.headerAboveContent} != 1">
+					<f:render partial="Header" arguments="{_all}" />
+				</f:if>
+				<f:format.html>{data.bodytext}</f:format.html>
+			</div>
+			<f:if condition="{gallery.position.galleryAboveContent} != 1">
+				<f:render partial="MediaGallery" arguments="{_all}" />
+			</f:if>
+		</div>
+		<f:render partial="Footer" arguments="{_all}" />
+	</f:section>
+
+</html>

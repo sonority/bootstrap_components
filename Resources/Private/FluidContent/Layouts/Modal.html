@@ -1,0 +1,33 @@
+<html
+	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	xmlns:bc="http://typo3.org/ns/Sonority/BootstrapComponents/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+
+	<div id="c{data.uid}"{bc:attribute(values:{0:wrap,1:sectionFrame,2:backgroundMedia.class})}{bc:attribute(name:'style',values:{0:backgroundMedia.style})}>
+		<div{bc:attribute(values:{0:container})}>
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-{data.uid}">
+				<f:if condition="{data.header_icon}"><span class="{data.header_icon}"></span> </f:if>{data.header}
+			</button>
+			<!-- Modal -->
+			<div id="modal-{data.uid}"{bc:attribute(values:{0:'ce-layout',1:layoutStyle})} tabindex="-1" role="dialog" aria-labelledby="label-{data.uid}">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="label-{data.uid}"><f:if condition="{data.header_icon}"><span class="{data.header_icon}"></span> </f:if>{data.header}</h4>
+						</div>
+						<div{bc:attribute(values:{0:'modal-body',1:layoutMedia.class})}{bc:attribute(name:'style',values:{0:layoutMedia.style})}>
+							<f:render section="content" />
+						</div>
+						<div class="modal-footer">
+							<f:render partial="Footer" arguments="{_all}" />
+							<button type="button" class="btn btn-primary" data-dismiss="modal"><f:translate key="LLL:EXT:bootstrap_components/Resources/Private/Language/locallang.xlf:close" /></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</html>
+

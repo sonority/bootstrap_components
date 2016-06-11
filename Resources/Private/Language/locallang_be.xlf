@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-12-14T13:07:39Z" product-name="bootstrap_components">
+		<header/>
+		<body>
+			<trans-unit id="tt_content.palette.displaySettings" xml:space="preserve">
+                <source>Display Settings</source>
+            </trans-unit>
+
+			<trans-unit id="gridelements.sheet.options" xml:space="preserve">
+				<source>Options</source>
+			</trans-unit>
+			<trans-unit id="gridelements.sheet.layout" xml:space="preserve">
+				<source>Layout</source>
+			</trans-unit>
+			<trans-unit id="gridelements.sheet.gridConfig" xml:space="preserve">
+				<source>Configuration</source>
+			</trans-unit>
+
+			<trans-unit id="gridelements.shared.gridClasses" xml:space="preserve">
+				<source>CSS classes</source>
+			</trans-unit>
+			<trans-unit id="gridelements.shared.layout" xml:space="preserve">
+				<source>Style</source>
+			</trans-unit>
+
+			<trans-unit id="gridelements.carousel.interval" xml:space="preserve">
+				<source>Interval</source>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.effect" xml:space="preserve">
+				<source>Animation effect</source>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.effect.I.0" xml:space="preserve">
+				<source>no effect</source>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.effect.I.1" xml:space="preserve">
+				<source>Slide</source>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.effect.I.2" xml:space="preserve">
+				<source>Fade</source>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.autostart" xml:space="preserve">
+				<source>Autostart</source>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.showControls" xml:space="preserve">
+				<source>Show controls</source>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.showIndicators" xml:space="preserve">
+				<source>Show indicators</source>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.pauseOnHover" xml:space="preserve">
+				<source>Pause on mouseover</source>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.wrap" xml:space="preserve">
+				<source>Loop</source>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.minHeight" xml:space="preserve">
+				<source>Minimum height</source>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.maxHeight" xml:space="preserve">
+				<source>Maximum height</source>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.layout.I.0" xml:space="preserve">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.layout.I.1" xml:space="preserve">
+				<source>Header slide</source>
+			</trans-unit>
+			<trans-unit id="gridelements.carousel.layout.I.2" xml:space="preserve">
+				<source>Group of content elements</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

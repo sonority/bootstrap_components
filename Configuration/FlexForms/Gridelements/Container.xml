@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:grid.sheet.gridConfig</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <gridClasses>
+                        <TCEforms>
+                            <label>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_db.xlf:grid.label.gridClasses</label>
+                            <config>
+                                <type>input</type>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </gridClasses>
+                </el>
+            </ROOT>
+        </sDEF>
+	</sheets>
+</T3DataStructure>

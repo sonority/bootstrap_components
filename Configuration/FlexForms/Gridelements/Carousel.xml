@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sLayout>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.sheet.layout</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<rowclass>
+						<TCEforms>
+							<label>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.shared.layout</label>
+							<config>
+								<type>select</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.carousel.layout.I.0</numIndex>
+										<numIndex index="1">0</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.carousel.layout.I.1</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.carousel.layout.I.2</numIndex>
+										<numIndex index="1">2</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</rowclass>
+				</el>
+			</ROOT>
+		</sLayout>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.sheet.gridConfig</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<gridClasses>
+						<TCEforms>
+							<label>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.shared.gridClasses</label>
+							<config>
+								<type>input</type>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</gridClasses>
+				</el>
+			</ROOT>
+		</sDEF>
+		<sOptions>
+			<ROOT type="array">
+				<TCEforms>
+					<sheetTitle>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.sheet.options</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el type="array">
+					<interval type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.carousel.interval</label>
+							<config type="array">
+								<type>input</type>
+								<size>5</size>
+								<max>8</max>
+								<default>5000</default>
+								<range>
+									<lower>100</lower>
+								</range>
+								<eval>int</eval>
+							</config>
+						</TCEforms>
+					</interval>
+					<effect type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.carousel.effect</label>
+							<config type="array">
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.carousel.effect.I.0</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.carousel.effect.I.1</numIndex>
+										<numIndex index="1">slide</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.carousel.effect.I.2</numIndex>
+										<numIndex index="1">slide carousel-fade</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</effect>
+					<autostart type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.carousel.autostart</label>
+							<config type="array">
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</autostart>
+					<showControls type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.carousel.showControls</label>
+							<config type="array">
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</showControls>
+					<showIndicators type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.carousel.showIndicators</label>
+							<config type="array">
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</showIndicators>
+					<pauseOnHover type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.carousel.pauseOnHover</label>
+							<config type="array">
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</pauseOnHover>
+					<wrap type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.carousel.wrap</label>
+							<config type="array">
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</wrap>
+					<minHeight type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.carousel.minHeight</label>
+							<config type="array">
+								<type>input</type>
+								<size>5</size>
+								<max>6</max>
+								<default></default>
+							</config>
+						</TCEforms>
+					</minHeight>
+					<maxHeight type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:bootstrap_components/Resources/Private/Language/locallang_be.xlf:gridelements.carousel.maxHeight</label>
+							<config type="array">
+								<type>input</type>
+								<size>5</size>
+								<max>6</max>
+								<default>auto</default>
+							</config>
+						</TCEforms>
+					</maxHeight>
+				</el>
+			</ROOT>
+		</sOptions>
+	</sheets>
+</T3DataStructure>

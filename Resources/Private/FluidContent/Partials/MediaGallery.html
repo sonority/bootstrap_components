@@ -1,0 +1,107 @@
+<html
+	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+
+	<f:if condition="{gallery.rows}">
+		<f:if condition="{gallery.carousel}">
+			<f:then>
+				<div class="{gallery.galleryClass} ce-gallery{f:if(condition: data.imageborder, then: ' ce-border')}">
+					<f:render partial="Gallery/Carousel" arguments="{_all}" />
+				</div>
+			</f:then>
+			<f:else>
+
+				<div class="{gallery.galleryClass} ce-gallery{f:if(condition: data.imageborder, then: ' ce-border')}" data-ce-columns="{gallery.count.columns}" data-ce-images="{gallery.count.files}">
+					<f:for each="{gallery.rows}" as="row">
+						<div class="row">
+							<f:for each="{row.columns}" as="column">
+								<f:if condition="{column.media}">
+
+									<div class="{gallery.columnClass}{f:if(condition: '{column.media.type} == 4', then: ' responsive-video')}">
+										<f:if condition="{column.media.description}">
+											<f:then>
+												<figure class="ce-media lazyload" data-expand="-10">
+											</f:then>
+											<f:else>
+												<div class="ce-media lazyload" data-expand="-10">
+											</f:else>
+										</f:if>
+
+										<f:switch expression="{column.media.type}">
+											<f:case value="3">
+												<f:render section="audioType" arguments="{_all}" />
+											</f:case>
+											<f:case value="4">
+												<f:render section="videoType" arguments="{_all}" />
+											</f:case>
+											<f:case default="TRUE">
+												<f:render section="imageType" arguments="{_all}" />
+											</f:case>
+										</f:switch>
+
+										<f:if condition="{column.media.description}">
+											<f:then>
+												<figcaption>
+													{column.media.description}
+												</figcaption>
+												</figure>
+											</f:then>
+											<f:else>
+												</div>
+											</f:else>
+										</f:if>
+									</div>
+
+								</f:if>
+							</f:for>
+						</div>
+					</f:for>
+				</div>
+			</f:else>
+		</f:if>
+	</f:if>
+
+	<f:section name="imageType">
+		<f:if condition="{column.media.link}">
+			<f:then>
+				<f:link.typolink parameter="{column.media.link}">
+					<f:render section="media" arguments="{_all}" />
+				</f:link.typolink>
+			</f:then>
+			<f:else>
+				<f:if condition="{data.image_zoom}">
+					<f:then>
+					<ce:link.clickEnlarge image="{column.media}" configuration="{settings.media.popup}">
+						<f:render section="media" arguments="{_all}" />
+					</ce:link.clickEnlarge>
+					</f:then>
+					<f:else>
+						<f:render section="media" arguments="{_all}" />
+					</f:else>
+				</f:if>
+			</f:else>
+		</f:if>
+	</f:section>
+
+	<f:section name="audioType">
+		<f:render section="media" arguments="{_all}" />
+	</f:section>
+
+	<f:section name="videoType">
+		<div class="ce-video">
+			<f:render section="media" arguments="{_all}" />
+		</div>
+	</f:section>
+
+	<f:section name="media">
+		<f:media
+			class="lazyload{f:if(condition: imageShape, then: ' {imageShape}')} type-{column.media.extension}{f:if(condition: data.image_responsive, then: ' img-responsive')}"
+			file="{column.media}"
+			width="{column.dimensions.width}"
+			height="{column.dimensions.height}"
+			alt="{column.media.alternative}"
+			title="{column.media.title}"
+			/>
+	</f:section>
+</html>

@@ -1,0 +1,319 @@
+lib.parseFunc_RTE.externalBlocks.table.stdWrap.HTMLparser.tags.table.fixAttrib.class {
+	default = table
+	list >
+	#userFunc = Sonority\BootstrapComponents\Helpers\TableClass->prefixTableClass
+	#userFunc.default < lib.parseFunc_RTE.externalBlocks.table.stdWrap.HTMLparser.tags.table.fixAttrib.class.default
+}
+
+lib.fluidContent {
+	templateRootPaths {
+		0 = EXT:bootstrap_components/Resources/Private/FluidContent/Templates/
+	}
+	partialRootPaths {
+		0 = EXT:bootstrap_components/Resources/Private/FluidContent/Partials/
+	}
+	layoutRootPaths {
+		0 = EXT:bootstrap_components/Resources/Private/FluidContent/Layouts/
+	}
+	# Basic settings for bootstrap_components.
+	#
+	# This is used as "CSS-class-mapping" for the following fields:
+	#	- header_style
+	#	- header_position
+	#	- layout
+	#	- layout_style
+	#	- image_shape
+	#	- gallery_break
+	#	- section_frame_style
+	#	- display_mode
+	#	- wrap
+	#	- container
+	#
+	# Usage:
+	#	lib.fluidContent.settings.[DBFIELD].default = 0	# The number of the default value (refers to .[DBVALUE])
+	#	lib.fluidContent.settings.[DBFIELD].[DBVALUE] = classname	# The name of the CSS-class to be used
+	#
+	settings {
+
+		image_shape {
+			# ID of the default image_shape
+			default = {$styles.content.defaultImageShape}
+			1 = img-rounded
+			2 = img-circle
+			3 = img-thumbnail
+		}
+		# Set dynamic values for gallery-breakpoints
+		gallery_break {
+			default = 1
+			# Priority to smartphone
+			#   Set col-xs to a fixed value of 12 and leave col-sm at the given value
+			1 = col-xs-12 col-sm-(+1) col-md-(0)
+			# Keep allocation
+			#   Leave col-xs at given value
+			2 = col-xs-(0)
+			# Balanced allocation
+			#   Add +2 to col-xs, +1 to col-sm an leave col-md at given value
+			3 = col-xs-(+2) col-sm-(+1) col-md-(0)
+			# Focus on text width
+			#   Add +1 to col-xs an leave col-sm at given value
+			4 = col-xs-(+1) col-sm-(0)
+			# Focus on image width
+			#   Add +2 to col-xs, +2 to col-sm, +1 to col-md an leave col-lg at given value
+			5 = col-xs-(+2) col-sm-(+2) col-md-(+1) col-lg-(0)
+		}
+		header_position {
+			# ID of the default header-position (lib.fluidContent.settings.header.position.I)
+			default = {$styles.content.defaultHeaderPosition}
+			1 = text-center
+			2 = text-right
+			3 = text-left
+		}
+		header_style {
+			# ID of the default header-class (lib.fluidContent.settings.header.style.I)
+			default = {$styles.content.defaultHeaderStyle}
+			1 = headline headline-v1
+			2 = headline headline-v2
+			3 = headline headline-v3
+			4 = headline headline-v4
+			5 = headline headline-v4 dashed
+			6 = headline headline-v4 double dashed
+			# Always use the following class if no style is selected
+			100 = headline
+		}
+		layout {
+			# ID of the default layout
+			default = 0
+			# The following values are FLUID-layouts!
+			0 = Default
+			1 = Jumbotron
+			2 = Thumbnail
+			3 = Alert
+			4 = Panel
+			5 = Well
+			6 = Blockquote
+			7 = Box
+			8 = Modal
+			9 = Citation
+		}
+		layout_style {
+			# Jumbotron
+			1 {
+				default = 1
+				1 = jumbotron
+			}
+			# Thumbnail
+			2 {
+				default = 1
+				1 = thumbnail thumbnail-layout1
+				2 = thumbnail thumbnail-layout2
+				3 = thumbnail thumbnail-layout3
+			}
+			# Alerts
+			3 {
+				default = 1
+				1 = alert alert-success
+				2 = alert alert-info
+				3 = alert alert-warning
+				4 = alert alert-danger
+			}
+			# Panel
+			4 {
+				default = 1
+				1 = panel panel-default
+				2 = panel panel-primary
+				3 = panel panel-success
+				4 = panel panel-info
+				5 = panel panel-warning
+				6 = panel panel-danger
+			}
+			# Well
+			5 {
+				default = 1
+				1 = well
+				2 = well well-sm
+				3 = well well-lg
+			}
+			# Blockquote
+			6 {
+				default = 1
+				1 = blockquote
+			}
+			# Box
+			7 {
+				default = 1
+				1 = tag-box tag-box-v1 box-shadow shadow-effect-2
+				2 = tag-box tag-box-v2 box-shadow shadow-effect-2
+				3 = tag-box tag-box-v3 box-shadow shadow-effect-2
+			}
+			# Modal
+			8 {
+				default = 1
+				1 = modal fade
+			}
+			# Citation
+			9 {
+				default = 1
+				1 = citation
+			}
+		}
+		# Define the CSS-classes which should be used if {field:wrap} is used
+		wrap {
+			default = 0
+			0 = wrap-default
+			1 = wrap-1
+			2 = wrap-2
+			3 = wrap-3
+			4 = wrap-4
+			100 = wrap-empty
+		}
+		section_frame_style {
+			default = {$styles.content.defaultSectionFrame}
+			1 {
+				1 = divider-above divider-v1
+				2 = divider-above divider-v2
+				3 = divider-above divider-v3
+			}
+			2 {
+				1 = divider-below divider-v1
+				2 = divider-below divider-v2
+				3 = divider-below divider-v3
+			}
+			3 {
+				1 = divider-above divider-below divider-v1
+				2 = divider-above divider-below divider-v2
+				3 = divider-above divider-below divider-v3
+			}
+			4 {
+				1 = margin-above margin-v1
+				2 = margin-above margin-v2
+				3 = margin-above margin-v3
+			}
+			5 {
+				1 = margin-below margin-v1
+				2 = margin-below margin-v2
+				3 = margin-below margin-v3
+			}
+			6 {
+				1 = margin-above margin-below margin-v1
+				2 = margin-above margin-below margin-v2
+				3 = margin-above margin-below margin-v3
+			}
+		}
+		# Define the CSS-class which should be used if {field:container} is enabled
+		container {
+			1 = container
+		}
+		display_mode {
+			0 = img-background
+			1 = img-layout
+		}
+		display_mode_maxWidth {
+			0 = 1640
+			1 = {$styles.content.textmedia.maxW}
+		}
+	}
+	# Set dataprocessor for all content-elements
+	dataProcessing {
+		11 = Sonority\BootstrapComponents\DataProcessing\FilesProcessor
+		11 {
+			references.fieldName = template_media
+		}
+		# Add processor for the field 'additional layouts'
+		30 = Sonority\BootstrapComponents\DataProcessing\ValueMapProcessor
+		30 {
+			fieldName = layout
+			as = layoutName
+		}
+		# Add processor for the field 'header_style'
+		31 = Sonority\BootstrapComponents\DataProcessing\ValueMapProcessor
+		31 {
+			fieldName = header_style
+		}
+		# Add processor for the field 'header_position'
+		32 = Sonority\BootstrapComponents\DataProcessing\ValueMapProcessor
+		32 {
+			fieldName = header_position
+		}
+		# Add processor for the field 'layout_style'
+		33 = Sonority\BootstrapComponents\DataProcessing\ValueMapProcessor
+		33 {
+			parentField = layout
+			fieldName = layout_style
+		}
+		# Add processor for the field 'section_frame'
+		34 = Sonority\BootstrapComponents\DataProcessing\ValueMapProcessor
+		34 {
+			parentField = section_frame
+			fieldName = section_frame_style
+			as = sectionFrame
+		}
+		# Add processor for the field 'wrap'
+		35 = Sonority\BootstrapComponents\DataProcessing\ValueMapProcessor
+		35 {
+			fieldName = wrap
+		}
+		# Add processor for the field 'container'
+		36 = Sonority\BootstrapComponents\DataProcessing\ValueMapProcessor
+		36 {
+			fieldName = container
+			if {
+				# Process this value if container is set AND if parent record (gridelement) has no container set
+				isTrue.field = container
+				isFalse.field = parentgrid_container
+			}
+		}
+	}
+}
+
+tt_content {
+	table {
+		dataProcessing {
+			10 {
+				fieldName = table_content
+			}
+			20 = Sonority\BootstrapComponents\DataProcessing\Content\TableProcessor
+		}
+		stdWrap {
+			editIcons = tt_content: header [header_layout], bodytext, table_content, [table_caption|cols|table_header_position|table_tfoot]
+		}
+	}
+	textmedia {
+		dataProcessing {
+			# Override GalleryProcessor from fluid_styled_content with an alternative version
+			20 = Sonority\BootstrapComponents\DataProcessing\GalleryProcessor
+			20 {
+				# Defines which imagepositions displays the header above content
+				headerAboveContent = 0, 1, 2, 8, 9, 10, 17, 18
+				# Defines which imagepositions displays the gallery above content
+				galleryAboveContent = 0, 1, 2, 17, 18, 26
+				# Defines how many columns are used by default (bootstrap-grid provides 12 columns, so a value of 4 is pretty good for intext)
+				defaultGalleryWidth = {$styles.content.defaultGalleryWidth}
+				# Default class for gallery/text columns
+				columnClass = col-xs-(0)
+				# Defines how many columns are uses in responsive grids
+				gridColumns = 12
+				# Minimum width (in pixel) of the gallery for use with responsive layouts
+				galleryResponsiveMinWidth = 737
+			}
+			# Add processor for image-shape
+			40 = Sonority\BootstrapComponents\DataProcessing\ValueMapProcessor
+			40 {
+				fieldName = image_shape
+			}
+		}
+	}
+	login =< lib.fluidContent
+	login.templateName = Login
+}
+
+page {
+	includeCSS {
+		# Add CSS for bootstrap-components
+		bootstrap_components = EXT:bootstrap_components/Resources/Public/Css/bootstrap_components.css
+	}
+	includeJSFooterlibs {
+		# Add javascript for bootstrap-components (keep same height in carousel)
+		bootstrap_components = EXT:bootstrap_components/Resources/Public/JavaScript/lazyload-carousel.min.js
+		bootstrap_components.disableCompression = 1
+	}
+}

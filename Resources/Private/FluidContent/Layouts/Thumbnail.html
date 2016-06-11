@@ -1,0 +1,63 @@
+<html
+	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	xmlns:bc="http://typo3.org/ns/Sonority/BootstrapComponents/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+
+	<div id="c{data.uid}"{bc:attribute(values:{0:wrap,1:sectionFrame,2:backgroundMedia.class})}{bc:attribute(name:'style',values:{0:backgroundMedia.style})}>
+		<div{bc:attribute(values:{0:container})}>
+			<div{bc:attribute(values:{0:'ce-layout',1:layoutStyle,2:layoutMedia.class})}{bc:attribute(name:'style',values:{0:layoutMedia.style})}>
+				<f:link.typolink parameter="{data.header_link}">
+					<f:if condition="{files.0}">
+						<f:alias map="{media: files.0}">
+							<div class="ce-media lazyload" data-expand="-10">
+								<f:media
+									class="lazyload ce-media{f:if(condition: imageShape, then: ' {imageShape}')}{f:if(condition: data.image_responsive, then: ' img-responsive')}"
+									file="{media}"
+									width="{data.imagewidth}"
+									height="{data.imageheight}"
+									alt="{media.alternative}"
+									title="{media.title}"
+									/>
+							</div>
+						</f:alias>
+					</f:if>
+					<div class="caption">
+						<f:if condition="{data.header_icon}"><span class="thumbnail-icon {data.header_icon}"></span> </f:if>
+						<div class="thumbnail-text">
+							<f:if condition="{data.header_layout} != 100">
+								<f:if condition="{data.header}">
+									<header class="{headerStyle}{f:if(condition: headerPosition, then: ' {headerPosition}')}">
+										<f:switch expression="{data.layout}">
+											<f:case value="1">
+												<h1>{data.header}</h1>
+											</f:case>
+											<f:case value="2">
+												<h2>{data.header}</h2>
+											</f:case>
+											<f:case value="3">
+												<h3>{data.header}</h3>
+											</f:case>
+											<f:case value="4">
+												<h4>{data.header}</h4>
+											</f:case>
+											<f:case value="5">
+												<h5>{data.header}</h5>
+											</f:case>
+											<f:case value="6">
+												<h6>{data.header}</h6>
+											</f:case>
+											<f:case value="100">
+												<f:comment> -- do not show header -- </f:comment>
+											</f:case>
+										</f:switch>
+									</header>
+								</f:if>
+							</f:if>
+							<f:format.html>{data.bodytext}</f:format.html>
+						</div>
+					</div>
+				</f:link.typolink>
+			</div>
+		</div>
+	</div>
+</html>
