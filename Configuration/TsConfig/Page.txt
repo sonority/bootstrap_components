@@ -125,10 +125,9 @@ TCEFORM.tt_content {
 #-------------------------------------------------------------------------------
 TCAdefaults {
 	tt_content {
-#		header_layout = 2
-#		header_style = 1
 		wrap = 0
 		image_responsive = 1
+		imagecols = 1
 	}
 }
 

@@ -313,7 +313,7 @@ page {
 	}
 	includeJSFooterlibs {
 		# Add javascript for bootstrap-components (keep same height in carousel)
-		bootstrap_components = EXT:bootstrap_components/Resources/Public/JavaScript/lazyload-carousel.min.js
+		bootstrap_components = EXT:bootstrap_components/Resources/Public/JavaScript/bootstrap_components.min.js
 		bootstrap_components.disableCompression = 1
 	}
 }

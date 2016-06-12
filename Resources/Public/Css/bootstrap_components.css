@@ -171,6 +171,7 @@
     -o-background-size: cover;
     background-size: cover;
 	padding: 15px;
+	height: 100%;
 }
 /* Responsive video */
 .responsive-video figure {
